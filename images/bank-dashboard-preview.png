@@ -1,1 +1,9 @@
- 
+The screenshot shows a modern dashboard interface with:
+- Title "Bank Interest Rate Dashboard" with a bank icon
+- Welcome message explaining the platform's purpose
+- Two main sections:
+  1. Interest Rate Trends Over Time (line chart)
+  2. Current Rates Comparison (bar chart)
+- Filter options on the left for country, term, and banks
+- Summary statistics at the bottom
+- Clean, professional design with blue and white color scheme 
