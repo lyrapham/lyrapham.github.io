@@ -40,9 +40,9 @@ nav {
 }
 
 .nav-content {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     display: flex;
     justify-content: center;
 }
@@ -69,8 +69,8 @@ nav {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
-    font-size: 1.1rem;
-    padding: 0.8rem 2rem;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
     border-radius: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
@@ -109,11 +109,13 @@ nav {
     grid-template-columns: 1fr 1.5fr;
     min-height: 100vh;
     padding-top: 4rem;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 /* Introduction Section */
 .intro-section {
-    padding: 2rem;
+    padding: 1.5rem;
     background: var(--section-bg);
     display: flex;
     align-items: center;
@@ -140,15 +142,15 @@ nav {
 }
 
 .intro-content {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
 .intro-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-color);
     line-height: 1.2;
     opacity: 0;
@@ -157,9 +159,9 @@ nav {
 }
 
 .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease forwards 0.2s;
@@ -180,14 +182,15 @@ nav {
 }
 
 .about-summary p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
     color: var(--light-text);
 }
 
 /* Projects Section */
 .projects-section {
-    padding: 2rem;
+    padding: 1.5rem;
     background: var(--background);
     display: flex;
     flex-direction: column;
@@ -288,6 +291,8 @@ nav {
     position: relative;
     backdrop-filter: blur(10px);
     animation: cardFloat 6s ease-in-out infinite;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @keyframes cardFloat {
@@ -325,7 +330,7 @@ nav {
 
 .project-image {
     width: 100%;
-    height: 600px;
+    height: 450px;
     position: relative;
     overflow: hidden;
     border: 15px solid rgba(59, 130, 246, 0.1);
@@ -485,7 +490,7 @@ nav {
 }
 
 .project-content {
-    padding: 3rem;
+    padding: 1.25rem;
     background: linear-gradient(
         135deg,
         rgba(255, 255, 255, 0.95),
@@ -506,8 +511,8 @@ nav {
 }
 
 .project-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
     color: var(--text-color);
     position: relative;
     padding-bottom: 1rem;
@@ -538,10 +543,10 @@ nav {
 }
 
 .project-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
     color: var(--text-color);
-    margin-bottom: 2rem;
-    line-height: 1.8;
-    font-size: 1.1rem;
     opacity: 0.9;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
@@ -647,16 +652,16 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .skill-tags span {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
     background: var(--card-bg);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    transition: all 0.3s ease;
+    border-radius: 1rem;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
 }
 
 .skill-tags span:hover {
@@ -680,13 +685,14 @@ nav {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease forwards 0.6s;
+    font-size: 0.9rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
 }
 
@@ -747,10 +753,11 @@ nav {
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background: var(--card-bg);
     color: var(--light-text);
     border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
 }
 
 .footer-content {
@@ -760,63 +767,30 @@ footer {
     gap: 1rem;
 }
 
-.flags {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.flag {
-    width: 40px;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.flag:hover {
-    transform: scale(1.1);
-}
-
-.flag-separator {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .main-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1.2fr;
     }
     
-    .intro-section {
-        padding: 4rem 2rem;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    .project-card {
-        grid-template-columns: 1fr;
-    }
-
     .project-image {
         height: 400px;
-        border-width: 10px;
-    }
-
-    .project-image::after {
-        background: linear-gradient(
-            to bottom,
-            transparent 0%,
-            transparent 85%,
-            rgba(243, 244, 246, 0.8) 100%
-        );
     }
 }
 
 @media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro-content {
+        max-width: 500px;
+    }
+    
+    .project-image {
+        height: 350px;
+    }
+
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
@@ -834,11 +808,6 @@ footer {
 
     .section-title {
         font-size: 2rem;
-    }
-
-    .project-image {
-        height: 300px;
-        border-width: 8px;
     }
 
     .project-content {
